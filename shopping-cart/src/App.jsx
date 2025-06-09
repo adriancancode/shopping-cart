@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
-import Home from '/Home';
-import Cart from '/Cart';
-
+import Home from './pages/home';
+import Cart from './pages/cart';
+import Shop from './pages/shop';
+import './styles/App.css';
 function App() {
   
 
@@ -11,7 +12,8 @@ function App() {
       <MainLayout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Cart />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </MainLayout>
     </Router>
