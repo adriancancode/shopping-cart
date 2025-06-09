@@ -8,11 +8,15 @@ export default function Item({ item, onAddToCart }) {
 
     return (
         <div className="item">
-            <img src={item.image} alt={item.name} />
-            <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <p>${item.price.toFixed(2)}</p>
-            <button onClick={handleAddToCart}>Add to Cart</button>
+            <div className="item-content">
+                <img src={item.image} alt={item.title} />
+                <p>{item.title}</p>
+                <p>${item.price.toFixed(2)}</p>
+            </div>
+            <div className='add-button'>
+                <button onClick={handleAddToCart}>Add to Cart</button>
+            </div>
+            
         </div>
     );
 }

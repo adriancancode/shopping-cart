@@ -45,7 +45,7 @@ export default function Shop() {
     return (
         <div>
             <h1>Shop</h1>
-            <div id="item-list">
+            <div id="item-gallery">
                 {products.map(product => (
                     <Item key={product.id} item={product} onAddToCart={addToCart}/>
                 ))}

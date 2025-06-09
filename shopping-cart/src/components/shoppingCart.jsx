@@ -10,7 +10,7 @@ export default function ShoppingCart({ cartItems, totalPrice }) {
                     <ul>
                         {cartItems.map((item, index) => (
                             <li key={index}>
-                                {item.name} - ${item.price.toFixed(2)}
+                                {item.title} - ${item.price.toFixed(2)}
                             </li>
                         ))}
                     </ul>

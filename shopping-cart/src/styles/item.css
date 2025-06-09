@@ -1,8 +1,20 @@
 .item {
     border: 2px solid #000000;
     width: 200px;
+    height: 600px;
+    padding-left: 12px;
 }
 .item img {
     width: 100%;
     height: auto;
+}
+.item-content {
+    flex-grow: 1;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }

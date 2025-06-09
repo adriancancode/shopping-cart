@@ -9,7 +9,6 @@ export default function Navbar() {
             <ShoppingCart/>
             <Link to="/">Home</Link>
             <Link to="/shop">Shop</Link>
-            <Link to="/cart">Cart</Link>
         </nav>
     ); 
 }
